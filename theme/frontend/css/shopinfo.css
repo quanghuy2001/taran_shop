@@ -1,0 +1,53 @@
+.shop_info {
+  width: 100%;
+  height: 669px;
+  background: #fff7f3;
+}
+.info_right {
+  padding-left: 10rem;
+  padding-top: 2rem;
+}
+.info_right .info_text a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.info_image img {
+  width: 82%;
+}
+.image_right img {
+  padding-top: 5.2rem;
+  margin-left: 11rem;
+  width: 56%;
+}
+.shop_info2 {
+  width: 100%;
+  height: 669px;
+  background: #eff7fb;
+}
+.image_right2 img {
+  padding-top: 5.2rem;
+  padding-left: 9.2rem;
+  width: 75%;
+}
+.info_right2 {
+  padding-left: 8rem;
+  padding-top: 2rem;
+}
+.info_right2 .info_text2 a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.info_image2 img {
+  width: 75%;
+}
+.info_address {
+  margin-left: -8rem;
+}
+.info_text2 {
+  margin-left: -7.2rem;
+}
+.chill {
+  margin-left: -3rem;
+}

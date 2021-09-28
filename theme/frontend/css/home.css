@@ -1,0 +1,1430 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Avenir Next", "Avenir", sans-serif; */
+}
+.container {
+  margin: 0;
+  padding: 0;
+}
+.row {
+  display: flex;
+}
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 1em;
+  left: 1em;
+  /* z-index: 1; */
+  /* -webkit-user-select: none;
+  user-select: none; */
+  /* margin-left: 0px; */
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+  * Just a quick hamburger
+  */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: black;
+  border-radius: 3px;
+
+  z-index: 2;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+  * But let's hide the middle one.
+  */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+  * Ohyeah and the last one should go the other direction
+  */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 330px;
+  margin: -50px 0 0 -50px;
+  padding: 70px;
+  padding-top: 100px;
+  height: 760px;
+  z-index: 1;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 9px 0;
+  font-size: 22px;
+}
+
+/*
+  * And let's slide it in from the left
+  */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+.hl i {
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 1em;
+  float: right;
+  margin-right: 1em;
+}
+.news {
+  position: relative;
+}
+.main-news {
+  margin-left: 50em;
+  padding: 250px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main-news h1 {
+  color: rgb(43, 35, 35);
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-news a {
+  text-decoration: none;
+}
+.main-news i {
+  color: black;
+  font-size: 16px;
+}
+.read {
+  margin-top: 1em;
+  border: 1px solid black;
+  width: 8rem;
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 6px;
+}
+.read:hover {
+  color: #7b0200;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* dfnfn */
+.tabs .text1 a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1em;
+}
+.tabs .text2 a {
+  text-decoration: none;
+  color: black;
+  margin-left: 12em;
+}
+.tabs .text3 a {
+  text-decoration: none;
+  color: black;
+  margin-left: 23em;
+}
+@media (max-width: 480px) {
+  .tabs .text1 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+    font-size: 14px;
+  }
+  .tabs .text2 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+    font-size: 14px;
+  }
+  .tabs .text3 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+    font-size: 14px;
+  }
+}
+.tabs .text1 a:hover::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 5px 5px 0 0;
+  top: 755px;
+}
+.tabs .text2 a:hover::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 5px 5px 0 0;
+  top: 755px;
+}
+.tabs .text3 a:hover::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 5px 5px 0 0;
+  top: 755px;
+}
+.danhmuc .dm {
+  text-align: center;
+}
+.meo1 img {
+  padding-top: 1.25em;
+}
+.linh {
+  float: right;
+}
+.linh1 {
+  border: 1px solid black;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(43, 40, 40);
+  text-align: center;
+  margin-top: 14em;
+  padding-top: 5px;
+  margin-left: 4em;
+}
+.linh2 {
+  position: relative;
+}
+.linh img {
+  margin-right: 2em;
+}
+.hh {
+  position: absolute;
+  margin-top: 14em;
+  margin-left: 3.2em;
+  font-size: 20px;
+}
+.alo1 {
+  background-color: #f5f5f5;
+  height: 240px;
+  margin-top: 4em;
+}
+.alo .ee {
+  font-size: 20px;
+  margin-top: 3em;
+}
+.alo1 .e {
+  margin-top: 0;
+}
+.ip input {
+  width: 500px;
+  height: 40px;
+  padding-left: 1em;
+  border: 0;
+}
+.ip button {
+  width: 100px;
+  height: 40px;
+  background-color: #333333;
+  color: white;
+}
+.ha {
+  background-color: #212121;
+  height: 15rem;
+}
+.ha p {
+  color: white;
+  margin-left: 10em;
+}
+
+.hi {
+  margin-top: 5em;
+}
+.hii .gg {
+  font-size: 55px;
+  margin-left: 3em;
+  margin-top: 1em;
+  font-family: Akzidenz-Grotesk Next;
+}
+
+.viet {
+  position: relative;
+}
+.viet .viet1 {
+  position: absolute;
+  margin-top: 53.5em;
+  margin-left: 17.5em;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: white;
+}
+.viet1 p {
+  margin-top: 8px;
+}
+.viet .viet2 {
+  position: absolute;
+  margin-top: 24em;
+  margin-left: 17.5em;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: white;
+}
+.viet2 p {
+  margin-top: 8px;
+}
+
+.viet .viet3 {
+  position: absolute;
+  margin-top: 25.4em;
+  margin-left: 17.5em;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: white;
+}
+.viet3 p {
+  margin-top: 8px;
+}
+
+.viet .viet4 {
+  position: absolute;
+  margin-top: 24.5em;
+  margin-left: 17.5em;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: white;
+}
+.viet4 p {
+  margin-top: 8px;
+}
+.viet .viet5 {
+  position: absolute;
+  margin-top: 25.5em;
+  margin-left: 17.5em;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: white;
+}
+.viet5 p {
+  margin-top: 8px;
+}
+.viet .viet6 {
+  position: absolute;
+  margin-top: 53.5em;
+  margin-left: 17.5em;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: white;
+}
+.viet6 p {
+  margin-top: 8px;
+}
+.viet .viet7 {
+  position: absolute;
+  margin-top: 53.5em;
+  margin-left: 17.5em;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: white;
+}
+.viet7 p {
+  margin-top: 8px;
+}
+.viet .viet8 {
+  position: absolute;
+  margin-top: 24em;
+  margin-left: 17.5em;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: white;
+}
+.viet8 p {
+  margin-top: 8px;
+}
+.viet .viet9 {
+  position: absolute;
+  margin-top: 25.5em;
+  margin-left: 17.5em;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: white;
+}
+.viet9 p {
+  margin-top: 8px;
+}
+/* responsive */
+@media only screen and (max-width: 480px) {
+  .head img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-news {
+    margin-left: 10em;
+    padding: 3.5em 3em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .news {
+    position: relative;
+  }
+  .main-news h1 {
+    color: rgb(43, 35, 35);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -10px;
+    line-height: 2.2;
+  }
+  .main-news a {
+    text-decoration: none;
+  }
+  .main-news i {
+    color: black;
+    font-size: 6px;
+  }
+  .read {
+    margin-top: 1em;
+    border: 1px solid black;
+    width: 2.5rem;
+    height: 1rem;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 5px;
+  }
+  .read:hover {
+    color: #7b0200;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 1em;
+    left: 0.7em;
+  }
+  .dm img {
+    width: 100%;
+  }
+  .dm p {
+    font-size: 10px;
+  }
+  .viet {
+    position: relative;
+  }
+  .viet .img11 {
+    margin-top: 1em;
+  }
+  .viet .viet1 {
+    position: absolute;
+    margin-top: 24.5em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet1 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet2 {
+    position: absolute;
+    margin-top: 11.5em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet2 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+
+  .viet .viet3 {
+    position: absolute;
+    margin-top: 11.7em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet3 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+
+  .viet .viet4 {
+    position: absolute;
+    margin-top: 10.5em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet4 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet5 {
+    position: absolute;
+    margin-top: 12em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet5 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet6 {
+    position: absolute;
+    margin-top: 25.5em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet6 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet7 {
+    position: absolute;
+    margin-top: 24.5em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet7 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet8 {
+    position: absolute;
+    margin-top: 11.5em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet8 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet9 {
+    position: absolute;
+    margin-top: 12em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet9 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .linh2 img {
+    width: 100%;
+  }
+  .linh {
+    float: right;
+  }
+  .linh1 {
+    border: 1px solid black;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(43, 40, 40);
+    text-align: center;
+    margin-top: 14em;
+    padding-top: 2px;
+    margin-left: 1em;
+  }
+  .linh2 {
+    position: relative;
+  }
+  .hh {
+    position: absolute;
+    margin-top: 28em;
+    margin-left: 1.5em;
+    font-size: 10px;
+  }
+  .hh .hyy {
+    width: 125px;
+  }
+  .alo1 {
+    background-color: #f5f5f5;
+    height: 170px;
+    margin-top: 4em;
+  }
+  .alo .ee {
+    font-size: 14px;
+    margin-top: 2em;
+  }
+  .alo1 .e {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .ip input {
+    width: 200px;
+    height: 25px;
+    padding-left: 1em;
+    border: 0;
+    font-size: 10px;
+  }
+  .ip button {
+    width: 50px;
+    height: 25px;
+    background-color: #333333;
+    color: white;
+    font-size: 10px;
+  }
+  .ha {
+    background-color: #212121;
+    height: 12rem;
+  }
+  .ha p {
+    color: white;
+    margin-left: 1em;
+  }
+
+  .hi {
+    margin-top: 2.5em;
+    font-size: 8px;
+  }
+  .hi .nv {
+    margin-top: -1em;
+  }
+  .hii .gg {
+    font-size: 25px;
+    margin-left: 1em;
+    margin-top: 0.2em;
+    font-family: Akzidenz-Grotesk Next;
+  }
+  .hii .fb {
+    margin-top: -10px;
+    margin-left: 1em;
+    display: flex;
+  }
+  .fa-facebook {
+    color: white;
+    text-decoration: none;
+    width: 5px;
+    height: 5px;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-twitter {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+  }
+  .fa-instagram {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+  }
+  .fa-youtube {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+  }
+  .fb {
+    margin-left: 0em;
+    margin-top: 10em;
+  }
+  .linh2 {
+    margin-top: 1em;
+    margin-bottom: -2em;
+  }
+  #menuToggle span {
+    width: 28px;
+    height: 3px;
+  }
+  #menuToggle {
+    margin-top: 0.3em;
+  }
+}
+.hyy {
+  width: 330px;
+}
+.fa-facebook {
+  color: white;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-twitter {
+  color: white;
+  text-decoration: none;
+  margin-left: 1em;
+}
+.fa-instagram {
+  color: white;
+  text-decoration: none;
+  margin-left: 1em;
+}
+.fa-youtube {
+  color: white;
+  text-decoration: none;
+  margin-left: 1em;
+}
+.fb {
+  margin-left: 10.5em;
+  margin-top: -1em;
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .head img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-news {
+    margin-left: 23em;
+    padding: 11em 3em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .news {
+    position: relative;
+  }
+  .main-news h1 {
+    color: rgb(43, 35, 35);
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -10px;
+    line-height: 2.2;
+  }
+  .main-news a {
+    text-decoration: none;
+  }
+  .main-news i {
+    color: black;
+    font-size: 12px;
+  }
+  .read {
+    margin-top: 1em;
+    border: 1px solid black;
+    width: 3.5rem;
+    height: 1.2rem;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 8px;
+  }
+  .read:hover {
+    color: #7b0200;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .tabs .text1 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+    font-size: 15px;
+  }
+  .tabs .text2 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 5em;
+    font-size: 15px;
+  }
+  .tabs .text3 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 8.5em;
+    font-size: 15px;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 1em;
+    left: 0.7em;
+  }
+  .dm img {
+    width: 100%;
+  }
+  .dm p {
+    font-size: 15px;
+  }
+  .viet {
+    position: relative;
+  }
+  .viet img {
+    width: 100%;
+  }
+  .viet .viet1 {
+    position: absolute;
+    margin-top: 25.5em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet1 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet2 {
+    position: absolute;
+    margin-top: 11em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet2 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+
+  .viet .viet3 {
+    position: absolute;
+    margin-top: 12em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet3 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+
+  .viet .viet4 {
+    position: absolute;
+    margin-top: 11em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet4 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet5 {
+    position: absolute;
+    margin-top: 12.3em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet5 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet6 {
+    position: absolute;
+    margin-top: 25.5em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet6 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet7 {
+    position: absolute;
+    margin-top: 25.3em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet7 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet8 {
+    position: absolute;
+    margin-top: 11em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet8 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet9 {
+    position: absolute;
+    margin-top: 12em;
+    margin-left: 8.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet9 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .linh2 img {
+    width: 100%;
+  }
+  .linh {
+    float: right;
+    margin-right: 3em;
+  }
+  .linh1 {
+    border: 1px solid black;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(43, 40, 40);
+    text-align: center;
+    margin-top: 16em;
+    padding-top: 3px;
+    margin-left: 6em;
+  }
+  .linh2 {
+    position: relative;
+  }
+  .hh {
+    position: absolute;
+    margin-top: 22.5em;
+    margin-left: 6.8em;
+    font-size: 14px;
+  }
+  .hh .hyy {
+    width: 260px;
+  }
+  .alo1 {
+    background-color: #f5f5f5;
+    height: 170px;
+    margin-top: 4em;
+  }
+  .alo .ee {
+    font-size: 14px;
+    margin-top: 2em;
+  }
+  .alo1 .e {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .ip input {
+    width: 200px;
+    height: 25px;
+    padding-left: 1em;
+    border: 0;
+    font-size: 10px;
+  }
+  .ip button {
+    width: 50px;
+    height: 25px;
+    background-color: #333333;
+    color: white;
+    font-size: 10px;
+  }
+  .ha {
+    background-color: #212121;
+    height: 12rem;
+  }
+  .ha p {
+    color: white;
+    margin-left: 1em;
+  }
+
+  .hi {
+    margin-top: 2.5em;
+    font-size: 8px;
+  }
+  .hi .nv {
+    margin-top: -1em;
+  }
+  .hii .gg {
+    font-size: 25px;
+    margin-left: 1em;
+    margin-top: 0.2em;
+    font-family: Akzidenz-Grotesk Next;
+  }
+  .hii .fb {
+    margin-top: -10px;
+    margin-left: 1em;
+    display: flex;
+  }
+  .fa-facebook {
+    color: white;
+    text-decoration: none;
+    width: 5px;
+    height: 5px;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-twitter {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    width: 5px;
+    height: 5px;
+  }
+  .fa-instagram {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    width: 5px;
+    height: 5px;
+  }
+  .fa-youtube {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    width: 5px;
+    height: 5px;
+  }
+  .fb {
+    margin-left: 0em;
+    margin-top: 10em;
+  }
+  .linh2 {
+    margin-top: 1em;
+    margin-bottom: -2em;
+  }
+  #menuToggle span {
+    width: 28px;
+    height: 3px;
+  }
+  #menuToggle {
+    margin-top: 0.3em;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .head img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-news {
+    margin-left: 32em;
+    padding: 16em 3em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .news {
+    position: relative;
+  }
+  .main-news h1 {
+    color: rgb(43, 35, 35);
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -10px;
+    line-height: 2.2;
+  }
+  .main-news a {
+    text-decoration: none;
+  }
+  .main-news i {
+    color: black;
+    font-size: 16px;
+  }
+  .read {
+    margin-top: 1em;
+    border: 1px solid black;
+    width: 4.5rem;
+    height: 1.5rem;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 10px;
+  }
+  .read:hover {
+    color: #7b0200;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .tabs .text1 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 2em;
+    font-size: 15px;
+  }
+  .tabs .text2 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 7.5em;
+    font-size: 15px;
+  }
+  .tabs .text3 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 13em;
+    font-size: 15px;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 1em;
+    left: 0.7em;
+  }
+  .dm img {
+    width: 100%;
+  }
+  .dm p {
+    font-size: 15px;
+  }
+  .viet {
+    position: relative;
+  }
+  .viet img {
+    width: 100%;
+  }
+  .viet .viet1 {
+    position: absolute;
+    margin-top: 35em;
+    margin-left: 13em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet1 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet2 {
+    position: absolute;
+    margin-top: 15.5em;
+    margin-left: 12.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet2 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+
+  .viet .viet3 {
+    position: absolute;
+    margin-top: 16.5em;
+    margin-left: 12.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet3 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+
+  .viet .viet4 {
+    position: absolute;
+    margin-top: 15.5em;
+    margin-left: 13em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet4 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet5 {
+    position: absolute;
+    margin-top: 17em;
+    margin-left: 13em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet5 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet6 {
+    position: absolute;
+    margin-top: 35em;
+    margin-left: 12.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet6 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet7 {
+    position: absolute;
+    margin-top: 35em;
+    margin-left: 13em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet7 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet8 {
+    position: absolute;
+    margin-top: 15.5em;
+    margin-left: 12.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet8 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .viet .viet9 {
+    position: absolute;
+    margin-top: 16.6em;
+    margin-left: 12.5em;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  .viet9 p {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .linh2 img {
+    width: 100%;
+  }
+  .linh {
+    float: right;
+    margin-right: 3em;
+  }
+  .linh1 {
+    border: 1px solid black;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(43, 40, 40);
+    text-align: center;
+    margin-top: 16em;
+    padding-top: 2px;
+    margin-left: 4em;
+  }
+  .linh2 {
+    position: relative;
+  }
+  .hh {
+    position: absolute;
+    margin-top: 25em;
+    margin-left: 5.2em;
+    font-size: 12px;
+  }
+  .hh .hyy {
+    width: 150px;
+  }
+  .alo1 {
+    background-color: #f5f5f5;
+    height: 170px;
+    margin-top: 4em;
+  }
+  .alo .ee {
+    font-size: 14px;
+    margin-top: 2em;
+  }
+  .alo1 .e {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .ip input {
+    width: 200px;
+    height: 25px;
+    padding-left: 1em;
+    border: 0;
+    font-size: 10px;
+  }
+  .ip button {
+    width: 50px;
+    height: 25px;
+    background-color: #333333;
+    color: white;
+    font-size: 10px;
+  }
+  .ha {
+    background-color: #212121;
+    height: 12rem;
+  }
+  .ha p {
+    color: white;
+    margin-left: 1em;
+  }
+
+  .hi {
+    margin-top: 2.5em;
+    font-size: 8px;
+  }
+  .hi .nv {
+    margin-top: -1em;
+  }
+  .hii .gg {
+    font-size: 25px;
+    margin-left: 1em;
+    margin-top: 0.2em;
+    font-family: Akzidenz-Grotesk Next;
+  }
+  .hii .fb {
+    margin-top: -10px;
+    margin-left: 1em;
+    display: flex;
+  }
+  .fa-facebook {
+    color: white;
+    text-decoration: none;
+    width: 5px;
+    height: 5px;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-twitter {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    width: 5px;
+    height: 5px;
+  }
+  .fa-instagram {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    width: 5px;
+    height: 5px;
+  }
+  .fa-youtube {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    width: 5px;
+    height: 5px;
+  }
+  .fb {
+    margin-left: 0em;
+    margin-top: 10em;
+  }
+  .linh2 {
+    margin-top: 1em;
+    margin-bottom: -2em;
+  }
+  #menuToggle span {
+    width: 28px;
+    height: 3px;
+  }
+  #menuToggle {
+    margin-top: 0.3em;
+  }
+}

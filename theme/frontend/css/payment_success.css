@@ -1,0 +1,8 @@
+.tab_one {
+  position: relative;
+}
+.news_order {
+  position: absolute;
+  padding-top: 10rem;
+  top: -5rem;
+}

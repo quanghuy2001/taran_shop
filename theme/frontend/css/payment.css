@@ -1,0 +1,168 @@
+.text_top p {
+  font-size: 25px;
+}
+.text_top1 p {
+  font-size: 12px;
+  margin-left: 2rem;
+}
+.input_top input {
+  width: 90%;
+  height: 2.5rem;
+  margin-left: 2rem;
+  padding-left: 0.5rem;
+  border: 1px solid rgb(204, 202, 202);
+}
+.input_top1 input {
+  width: 90%;
+  height: 2.5rem;
+  margin-left: 2rem;
+  padding-left: 0.5rem;
+  margin-top: 1.5rem;
+  border: 1px solid rgb(204, 202, 202);
+}
+.input_top2 input {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  width: 85%;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  border: 1px solid rgb(204, 202, 202);
+}
+.input_top3 input {
+  margin-left: 0.5rem;
+  margin-top: 1.5rem;
+  width: 85%;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  border: 1px solid rgb(204, 202, 202);
+}
+.input_top4 input {
+  margin-left: -0.9rem;
+  margin-top: 1.5rem;
+  width: 85%;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  border: 1px solid rgb(204, 202, 202);
+}
+.input_top5 input {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  width: 87%;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  border: 1px solid rgb(204, 202, 202);
+}
+.input_top6 input {
+  margin-left: 0rem;
+  margin-top: 1.5rem;
+  width: 87%;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  border: 1px solid rgb(204, 202, 202);
+}
+.input_top7 input {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  width: 90%;
+  height: 4.3rem;
+  padding-left: 0.5rem;
+  padding-bottom: 2rem;
+  border: 1px solid rgb(204, 202, 202);
+}
+hr {
+  width: 90%;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+.text_bottom p {
+  font-size: 18px;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.bot button {
+  display: flex;
+  width: 90%;
+  height: 4rem;
+  margin-left: 2rem;
+  background: #f5f5f5;
+  border: 1px solid rgb(87, 84, 84);
+}
+button a img {
+  margin-left: 0.5rem;
+  margin-top: 0.6rem;
+}
+button p {
+  margin-left: 2rem;
+  margin-top: 1.2rem;
+}
+.bank {
+  width: 23rem;
+  height: 12rem;
+  border: 1px solid rgb(221, 216, 216);
+  margin-left: 2.8rem;
+  margin-top: 1.5rem;
+}
+.bank img {
+  margin-top: 0.5rem;
+}
+.bank1 img {
+  margin-top: 0.3rem;
+}
+.bank1 {
+  width: 23rem;
+  height: 12rem;
+  border: 1px solid rgb(221, 216, 216);
+  margin-left: 1.7rem;
+  margin-top: 1.5rem;
+}
+.bank span {
+  margin-top: -2rem;
+}
+.bank1 span {
+  margin-top: -1.8rem;
+}
+.get button {
+  display: flex;
+  width: 90%;
+  height: 4rem;
+  color: rgb(110, 109, 109);
+  margin-left: 2rem;
+  background: white;
+  border: 1px solid rgb(182, 182, 182);
+  margin-top: 1.5rem;
+}
+table {
+  width: 450px;
+  height: 753px;
+  margin-top: 3.5rem;
+}
+.table_bot td {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: 20px;
+}
+
+.table_bot1 td {
+  padding-left: 0.3rem;
+}
+.table_bot1 button {
+  border: none;
+  background: none;
+  margin-left: 1rem;
+}
+.texts td {
+  padding-top: 0.5rem;
+}
+.texts .text_top {
+  padding-left: 1rem;
+}
+.table_top3 button {
+  background: #333333;
+  color: white;
+  margin: 1rem 1rem;
+  height: 2.5rem;
+  width: 17rem;
+}
+.table_top3 {
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+.news_product {
+  display: grid;
+  text-align: center;
+}
+.news_product img {
+  width: 100%;
+}
+.news_product a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+.text {
+  margin-top: 1.5rem;
+}
+.news_product p {
+  margin-top: 0.5rem;
+  color: rgb(136, 133, 133);
+}
+.number {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: black;
+}
+.number a {
+  text-decoration: none;
+  color: white;
+}
+.number_two {
+  width: 25px;
+  height: 25px;
+  margin-left: 1rem;
+
+  border-radius: 50%;
+}
+.number_two a {
+  text-decoration: none;
+  color: black;
+}
+.number_group {
+  text-align: center;
+  margin: 0rem 40rem 0rem 40.5rem;
+}

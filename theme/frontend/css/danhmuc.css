@@ -1,0 +1,1017 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.news {
+  position: relative;
+}
+.main-news {
+  margin-left: 10em;
+  padding: 150px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main-news h1 {
+  color: rgb(43, 35, 35);
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-news a {
+  text-decoration: none;
+}
+.main-news i {
+  color: black;
+  font-size: 16px;
+}
+.read {
+  margin-top: 1em;
+  border: 1px solid black;
+  width: 8rem;
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 6px;
+}
+.read:hover {
+  color: #7b0200;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* <-tabs-> */
+.navbar .neo ul {
+  float: right;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  margin-left: 1em;
+  color: rgb(168, 167, 167);
+}
+.navbar ul li a::after {
+  content: "/";
+  margin-left: 1em;
+}
+.navbar ul li p {
+  margin-left: 1em;
+}
+.navbar ul li p:hover {
+  margin-left: 1em;
+  cursor: pointer;
+}
+/* <-- say--> */
+.say {
+  margin-left: 0.5em;
+}
+.say span {
+  font-size: 35px;
+}
+.say p {
+  margin-top: 1em;
+}
+.inputsearch {
+  width: 14rem;
+  height: 3rem;
+  margin-left: 13em;
+}
+.inputsearch1 {
+  width: 14rem;
+  height: 3rem;
+  margin-left: 9em;
+}
+.inputsearch2 {
+  width: 14rem;
+  height: 3rem;
+  margin-left: 4.5em;
+}
+.inputsearch3 {
+  width: 14rem;
+  height: 3rem;
+}
+.ac {
+  position: relative;
+}
+.ac1 {
+  position: absolute;
+  margin-top: 0.3em;
+  font-size: 22px;
+  margin-left: 0.7em;
+}
+.ac2 {
+  position: absolute;
+  margin-left: 3.6em;
+  margin-top: 0.8em;
+}
+.av {
+  position: relative;
+}
+.av1 {
+  position: absolute;
+  margin-left: 16.5em;
+  margin-top: 0.9em;
+}
+.vieww {
+  font-size: 25px;
+  color: rgb(99, 94, 94);
+  margin-top: 1.5em;
+}
+.say a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 480px) {
+  .head img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-news {
+    margin-left: 1em;
+    padding: 2em 2em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .news {
+    position: relative;
+  }
+  .main-news h1 {
+    color: rgb(43, 35, 35);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -10px;
+  }
+  .main-news a {
+    text-decoration: none;
+  }
+  .main-news p {
+    color: black;
+    font-size: 6px;
+    margin-top: 1em;
+  }
+  .read {
+    margin-top: -2em;
+    border: 1px solid black;
+    width: 2rem;
+    height: 0.7rem;
+    text-align: center;
+    padding-top: 1px;
+    font-size: 5px;
+  }
+  .read:hover {
+    color: #7b0200;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 1em;
+    left: 0.7em;
+  }
+  .navbar .neo ul {
+    float: right;
+    margin-top: -2em;
+  }
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    margin-left: 1em;
+    color: rgb(168, 167, 167);
+    font-size: 9px;
+  }
+  .navbar ul li p {
+    margin-left: 1em;
+    font-size: 9px;
+    margin-top: 0.95em;
+  }
+  .navbar ul li a::after {
+    content: "/";
+    margin-left: 1em;
+  }
+  .navbar ul li p {
+    margin-left: 1em;
+  }
+  .navbar ul li p:hover {
+    margin-left: 1em;
+    cursor: pointer;
+  }
+  .say {
+    margin-left: 0.5em;
+    margin-top: -2em;
+  }
+  .say span {
+    font-size: 16px;
+  }
+  .say p {
+    margin-top: 1em;
+    font-size: 9px;
+  }
+  .inputsearch {
+    width: 3.5rem;
+    height: 1.3rem;
+    margin-left: 8em;
+    font-size: 8px;
+  }
+  .inputsearch1 {
+    width: 3.5rem;
+    height: 1.3rem;
+    margin-left: 4.5em;
+    font-size: 8px;
+  }
+  .inputsearch2 {
+    width: 3.5rem;
+    height: 1.3rem;
+    margin-left: 0.9em;
+    font-size: 8px;
+  }
+  .inputsearch3 {
+    width: 3.5rem;
+    height: 1.3rem;
+    font-size: 8px;
+    margin-left: -3em;
+  }
+  .ac {
+    position: relative;
+  }
+  .ac1 {
+    position: absolute;
+    margin-top: 0.5em;
+    font-size: 11px;
+    margin-left: 0.7em;
+  }
+  .ac2 {
+    position: absolute;
+    margin-left: 3.6em;
+    margin-top: 1.2em;
+    font-size: 8px;
+  }
+  .av {
+    position: relative;
+  }
+  .av1 {
+    position: absolute;
+    margin-left: 4.5em;
+    margin-top: 1.05em;
+    font-size: 9px;
+  }
+  .vieww {
+    font-size: 16px;
+    color: rgb(99, 94, 94);
+    margin-top: 0em;
+  }
+  .say a {
+    text-decoration: none;
+    color: black;
+  }
+  .dm img {
+    width: 100%;
+  }
+  .dm p {
+    font-size: 10px;
+  }
+  .why img {
+    width: 100%;
+  }
+  .why p {
+    font-size: 10px;
+    margin-top: 1em;
+  }
+  .linh2 img {
+    width: 100%;
+  }
+  .linh {
+    float: right;
+  }
+  .linh1 {
+    border: 1px solid black;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(43, 40, 40);
+    text-align: center;
+    margin-top: 14em;
+    padding-top: 2px;
+    margin-left: 1em;
+  }
+  .linh2 {
+    position: relative;
+  }
+  .hh {
+    position: absolute;
+    margin-top: 28em;
+    margin-left: 1.5em;
+    font-size: 10px;
+  }
+  .hh .hyy {
+    width: 125px;
+  }
+  .alo1 {
+    background-color: #f5f5f5;
+    height: 170px;
+    margin-top: 4em;
+  }
+  .alo .ee {
+    font-size: 14px;
+    margin-top: 2em;
+  }
+  .alo1 .e {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .ip input {
+    width: 200px;
+    height: 25px;
+    padding-left: 1em;
+    border: 0;
+    font-size: 10px;
+  }
+  .ip button {
+    width: 50px;
+    height: 25px;
+    background-color: #333333;
+    color: white;
+    font-size: 10px;
+  }
+  .ha {
+    background-color: #212121;
+    height: 12rem;
+  }
+  .ha p {
+    color: white;
+    margin-left: 1em;
+  }
+
+  .hi {
+    margin-top: 2.5em;
+    font-size: 8px;
+  }
+  .hi .nv {
+    margin-top: -1em;
+  }
+  .hii .gg {
+    font-size: 25px;
+    margin-left: 1em;
+    margin-top: 0.2em;
+    font-family: Akzidenz-Grotesk Next;
+  }
+  .hii .fb {
+    margin-top: -10px;
+    margin-left: 1em;
+    display: flex;
+  }
+  .fa-facebook {
+    color: white;
+    text-decoration: none;
+    width: 5px;
+    height: 5px;
+    margin-left: 0em;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-twitter {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+    margin-left: 1em;
+  }
+  .fa-instagram {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+    margin-left: 1em;
+  }
+  .fa-youtube {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+    margin-left: 1em;
+  }
+  .fb {
+    margin-left: 0em;
+    margin-top: 10em;
+  }
+  .linh2 {
+    margin-top: 1em;
+    margin-bottom: -2em;
+  }
+  #menuToggle span {
+    width: 28px;
+    height: 3px;
+  }
+  #menuToggle {
+    margin-top: 0.3em;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .head img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-news {
+    margin-left: 1em;
+    padding: 4.5em 5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .news {
+    position: relative;
+  }
+  .main-news h1 {
+    color: rgb(43, 35, 35);
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -10px;
+  }
+  .main-news a {
+    text-decoration: none;
+  }
+  .main-news p {
+    color: black;
+    font-size: 12px;
+    margin-top: 0em;
+  }
+  .read {
+    margin-top: -1em;
+    border: 1px solid black;
+    width: 4rem;
+    height: 1.3rem;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 9px;
+  }
+  .read:hover {
+    color: #7b0200;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 1em;
+    left: 0.7em;
+  }
+  .navbar .neo ul {
+    float: right;
+    margin-top: -1.3em;
+  }
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    margin-left: 1em;
+    color: rgb(168, 167, 167);
+    font-size: 12px;
+  }
+  .navbar ul li p {
+    margin-left: 1em;
+    font-size: 12px;
+    margin-top: 0.4em;
+  }
+  .navbar ul li a::after {
+    content: "/";
+    margin-left: 1em;
+  }
+  .navbar ul li p {
+    margin-left: 1em;
+  }
+  .navbar ul li p:hover {
+    margin-left: 1em;
+    cursor: pointer;
+  }
+  .say {
+    margin-left: 0.5em;
+    margin-top: -2em;
+  }
+  .say span {
+    font-size: 18px;
+  }
+  .say p {
+    margin-top: 1em;
+    font-size: 12px;
+  }
+  .inputsearch {
+    width: 6rem;
+    height: 2rem;
+    margin-left: 16.5em;
+    font-size: 8px;
+    margin-top: 1em;
+  }
+  .inputsearch1 {
+    width: 6rem;
+    height: 2rem;
+    margin-left: 9.5em;
+    font-size: 8px;
+    margin-top: 1em;
+  }
+  .inputsearch2 {
+    width: 6rem;
+    height: 2rem;
+    margin-left: 2em;
+    font-size: 8px;
+    margin-top: 1em;
+  }
+  .inputsearch3 {
+    width: 6rem;
+    height: 2rem;
+    font-size: 8px;
+    margin-left: -5em;
+    margin-top: 1em;
+  }
+  .ac {
+    position: relative;
+  }
+  .ac1 {
+    position: absolute;
+    margin-top: 0.5em;
+    font-size: 18px;
+    margin-left: 0.7em;
+  }
+  .ac2 {
+    position: absolute;
+    margin-left: 3.5em;
+    margin-top: 1em;
+    font-size: 14px;
+  }
+  .av {
+    position: relative;
+  }
+  .av1 {
+    position: absolute;
+    margin-left: 7em;
+    margin-top: 1.2em;
+    font-size: 13px;
+  }
+  .vieww {
+    font-size: 16px;
+    color: rgb(99, 94, 94);
+    margin-top: 0em;
+  }
+  .say a {
+    text-decoration: none;
+    color: black;
+  }
+  .dm img {
+    width: 100%;
+  }
+  .dm p {
+    font-size: 10px;
+  }
+  .why img {
+    width: 100%;
+  }
+  .why p {
+    font-size: 10px;
+    margin-top: 1em;
+  }
+  .linh2 img {
+    width: 100%;
+  }
+  .linh {
+    float: right;
+  }
+  .linh1 {
+    border: 1px solid black;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(43, 40, 40);
+    text-align: center;
+    margin-top: 14em;
+    padding-top: 2px;
+    margin-left: 1em;
+  }
+  .linh2 {
+    position: relative;
+  }
+  .hh {
+    position: absolute;
+    margin-top: 28em;
+    margin-left: 1.5em;
+    font-size: 10px;
+  }
+  .hh .hyy {
+    width: 125px;
+  }
+  .alo1 {
+    background-color: #f5f5f5;
+    height: 170px;
+    margin-top: 4em;
+  }
+  .alo .ee {
+    font-size: 14px;
+    margin-top: 2em;
+  }
+  .alo1 .e {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .ip input {
+    width: 200px;
+    height: 25px;
+    padding-left: 1em;
+    border: 0;
+    font-size: 10px;
+  }
+  .ip button {
+    width: 50px;
+    height: 25px;
+    background-color: #333333;
+    color: white;
+    font-size: 10px;
+  }
+  .ha {
+    background-color: #212121;
+    height: 12rem;
+  }
+  .ha p {
+    color: white;
+    margin-left: 1em;
+  }
+
+  .hi {
+    margin-top: 2.5em;
+    font-size: 8px;
+  }
+  .hi .nv {
+    margin-top: -1em;
+  }
+  .hii .gg {
+    font-size: 25px;
+    margin-left: 1em;
+    margin-top: 0.2em;
+    font-family: Akzidenz-Grotesk Next;
+  }
+  .hii .fb {
+    margin-top: -10px;
+    margin-left: 1em;
+    display: flex;
+  }
+  .fa-facebook {
+    color: white;
+    text-decoration: none;
+    width: 5px;
+    height: 5px;
+    margin-left: 0em;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-twitter {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+    margin-left: 1em;
+  }
+  .fa-instagram {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+    margin-left: 1em;
+  }
+  .fa-youtube {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+    margin-left: 1em;
+  }
+  .fb {
+    margin-left: 0em;
+    margin-top: 10em;
+  }
+  .linh2 {
+    margin-top: 1em;
+    margin-bottom: -2em;
+  }
+  #menuToggle span {
+    width: 28px;
+    height: 3px;
+  }
+  #menuToggle {
+    margin-top: 0.3em;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .head img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-news {
+    margin-left: 1em;
+    padding: 6.5em 7em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .news {
+    position: relative;
+  }
+  .main-news h1 {
+    color: rgb(43, 35, 35);
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -10px;
+  }
+  .main-news a {
+    text-decoration: none;
+  }
+  .main-news p {
+    color: black;
+    font-size: 12px;
+    margin-top: 0em;
+  }
+  .read {
+    margin-top: -1em;
+    border: 1px solid black;
+    width: 4rem;
+    height: 1.3rem;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 9px;
+  }
+  .read:hover {
+    color: #7b0200;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 1em;
+    left: 0.7em;
+  }
+  .navbar .neo ul {
+    float: right;
+    margin-top: -1.3em;
+  }
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    margin-left: 1em;
+    color: rgb(168, 167, 167);
+    font-size: 14px;
+  }
+  .navbar ul li p {
+    margin-left: 1em;
+    font-size: 14px;
+    margin-top: 0.2em;
+  }
+  .navbar ul li a::after {
+    content: "/";
+    margin-left: 1em;
+  }
+  .navbar ul li p {
+    margin-left: 1em;
+  }
+  .navbar ul li p:hover {
+    margin-left: 1em;
+    cursor: pointer;
+  }
+  .say {
+    margin-left: 0.5em;
+    margin-top: -2em;
+  }
+  .say span {
+    font-size: 22px;
+  }
+  .say p {
+    margin-top: 1em;
+    font-size: 14px;
+  }
+  .inputsearch {
+    width: 9rem;
+    height: 2rem;
+    margin-left: 18.5em;
+    font-size: 9px;
+    margin-top: 1em;
+  }
+  .inputsearch1 {
+    width: 9rem;
+    height: 2rem;
+    margin-left: 10.5em;
+    font-size: 9px;
+    margin-top: 1em;
+  }
+  .inputsearch2 {
+    width: 9rem;
+    height: 2rem;
+    margin-left: 2.5em;
+    font-size: 9px;
+    margin-top: 1em;
+  }
+  .inputsearch3 {
+    width: 9rem;
+    height: 2rem;
+    font-size: 9px;
+    margin-left: -5.5em;
+    margin-top: 1em;
+  }
+  .ac {
+    position: relative;
+  }
+  .ac1 {
+    position: absolute;
+    margin-top: 0.5em;
+    font-size: 20px;
+    margin-left: 0.7em;
+  }
+  .ac2 {
+    position: absolute;
+    margin-left: 3.5em;
+    margin-top: 1.1em;
+    font-size: 15px;
+  }
+  .av {
+    position: relative;
+  }
+  .av1 {
+    position: absolute;
+    margin-left: 8.3em;
+    margin-top: 0.9em;
+    font-size: 16px;
+  }
+  .vieww {
+    font-size: 16px;
+    color: rgb(99, 94, 94);
+    margin-top: 0em;
+  }
+  .say a {
+    text-decoration: none;
+    color: black;
+  }
+  .dm img {
+    width: 100%;
+  }
+  .dm p {
+    font-size: 10px;
+  }
+  .why img {
+    width: 100%;
+  }
+  .why p {
+    font-size: 10px;
+    margin-top: 1em;
+  }
+  .linh2 img {
+    width: 100%;
+  }
+  .linh {
+    float: right;
+  }
+  .linh1 {
+    border: 1px solid black;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(43, 40, 40);
+    text-align: center;
+    margin-top: 14em;
+    padding-top: 2px;
+    margin-left: 1em;
+  }
+  .linh2 {
+    position: relative;
+  }
+  .hh {
+    position: absolute;
+    margin-top: 28em;
+    margin-left: 1.5em;
+    font-size: 10px;
+  }
+  .hh .hyy {
+    width: 125px;
+  }
+  .alo1 {
+    background-color: #f5f5f5;
+    height: 170px;
+    margin-top: 4em;
+  }
+  .alo .ee {
+    font-size: 14px;
+    margin-top: 2em;
+  }
+  .alo1 .e {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .ip input {
+    width: 200px;
+    height: 25px;
+    padding-left: 1em;
+    border: 0;
+    font-size: 10px;
+  }
+  .ip button {
+    width: 50px;
+    height: 25px;
+    background-color: #333333;
+    color: white;
+    font-size: 10px;
+  }
+  .ha {
+    background-color: #212121;
+    height: 12rem;
+  }
+  .ha p {
+    color: white;
+    margin-left: 1em;
+  }
+
+  .hi {
+    margin-top: 2.5em;
+    font-size: 14px;
+  }
+  .hi .nv {
+    margin-top: -1em;
+  }
+  .hii .gg {
+    font-size: 25px;
+    margin-left: 1em;
+    margin-top: 1em;
+    font-family: Akzidenz-Grotesk Next;
+  }
+  .hii .fb {
+    margin-top: -10px;
+    margin-left: 1em;
+    display: flex;
+  }
+  .fa-facebook {
+    color: white;
+    text-decoration: none;
+    width: 5px;
+    height: 5px;
+    margin-left: 0em;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-twitter {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+    margin-left: 1em;
+  }
+  .fa-instagram {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+    margin-left: 1em;
+  }
+  .fa-youtube {
+    color: white;
+    text-decoration: none;
+    margin-left: -1em;
+    width: 5px;
+    height: 5px;
+    margin-left: 1em;
+  }
+  .fb {
+    margin-left: 0em;
+    margin-top: 10em;
+  }
+  .linh2 {
+    margin-top: 1em;
+    margin-bottom: -2em;
+  }
+  #menuToggle span {
+    width: 28px;
+    height: 3px;
+  }
+  #menuToggle {
+    margin-top: 0.3em;
+  }
+}

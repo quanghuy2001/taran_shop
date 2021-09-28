@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.news {
+  position: relative;
+}
+.main-news {
+  margin-left: 10em;
+  padding: 400px 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main-news h1 {
+  color: rgb(43, 35, 35);
+  font-size: 75px;
+  font-family: roboto;
+}
+.navbarr {
+  position: relative;
+}
+.neo img {
+  float: right;
+  box-shadow: -70px 70px 5px -20px #ece7e7;
+}
+.neo1 {
+  margin-top: 11em;
+}
+.neo1 .orin {
+  font-size: 30px;
+}
+.hr {
+  width: 100px;
+  margin-left: 20em;
+}
+.chill img {
+  bottom: 0;
+  margin-top: 8em;
+  margin-left: 1em;
+}
+.chill1 img {
+  margin-top: 1.5em;
+  margin-left: -2em;
+}
+.orin1 {
+  font-size: 30px;
+  margin-left: 3em;
+  margin-top: 12em;
+}
+.hrr {
+  width: 70px;
+  margin-left: 5.8em;
+}
+.chill2 .oin {
+  margin-left: 5.7em;
+}
+.repeat img {
+  margin-left: 6.2em;
+}
+.orin11 {
+  font-size: 30px;
+  margin-left: 3em;
+  margin-top: 4em;
+}
+.hrrr {
+  width: 70px;
+  margin-left: 5.8em;
+}
+.oinn {
+  margin-left: 5.7em;
+}
+.how img {
+  margin-left: 4em;
+}
+.how2 img {
+  margin-left: 4em;
+}
+.repeatt img {
+  margin-left: 11.5em;
+}
+.pro {
+  font-size: 30px;
+  margin-top: 5em;
+  margin-left: 8em;
+}
+.prohr {
+  width: 90px;
+  margin-left: 16em;
+}
+.protext {
+  margin-left: 7em;
+}

@@ -1,0 +1,129 @@
+.cart_menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.cart_menu ul li {
+  list-style-type: none;
+  margin-left: 4.5rem;
+}
+.cart_menu ul {
+  display: flex;
+  margin-left: 23rem;
+}
+.cart_menu ul li a:hover::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 5px 5px 0 0;
+  top: 12.2rem;
+}
+table {
+  width: 100%;
+  border: 1px solid rgb(236, 230, 230);
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+.buttons_added {
+  opacity: 1;
+  display: inline-block;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  white-space: nowrap;
+  vertical-align: top;
+}
+.is-form {
+  overflow: hidden;
+  position: relative;
+  background-color: #f9f9f9;
+  height: 2.2rem;
+  width: 1.9rem;
+  padding: 0;
+  text-shadow: 1px 1px 1px #fff;
+  border: 1px solid #ddd;
+}
+.is-form:focus,
+.input-text:focus {
+  outline: none;
+}
+.is-form.minus {
+  border-radius: 4px 0 0 4px;
+}
+.is-form.plus {
+  border-radius: 0 4px 4px 0;
+}
+.input-qty {
+  background-color: #fff;
+  height: 2.2rem;
+  text-align: center;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  padding: 0;
+}
+.input-qty::-webkit-outer-spin-button,
+.input-qty::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.product td {
+  padding-left: 3rem;
+}
+.product_price {
+  border-bottom: 1px solid rgb(236, 230, 230);
+}
+.product_price td {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.product_price button {
+  background: none;
+  border: none;
+  margin-left: 3rem;
+}
+.product_price .price {
+  padding-left: 2.5rem;
+}
+.product {
+  border-bottom: 1px solid rgb(236, 230, 230);
+}
+.bottom button {
+  background: white;
+  margin: 1.5rem 1.5rem;
+  width: 10rem;
+  height: 2.5rem;
+}
+.bottom .continue {
+  padding-left: 2rem;
+}
+
+.table_right table {
+  background: #e0dfdf;
+  width: 85%;
+  margin-left: 4rem;
+}
+.table_top {
+  background: #b1aeae;
+}
+.table_top td {
+  padding: 0.5rem 0.5rem;
+}
+.table_top1 td {
+  padding: 0.5rem 0.5rem;
+}
+.table_top2 button {
+  background: #333333;
+  color: white;
+  margin: 1rem 1rem;
+  height: 2.5rem;
+}
+.table_top2 {
+  text-align: center;
+}
